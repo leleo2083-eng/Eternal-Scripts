@@ -10,7 +10,7 @@ local function BuildSeaHubUI(parent)
   i1.Name = "CanvasGroup"
   i1.Parent = gui
   i1.Size = UDim2.new(0,1000,0,700)
-  i1.Position = UDim2.new(0.5,512,0.5,322)
+  i1.Position = UDim2.new(0.5,0,0.5,0)
   i1.AnchorPoint = Vector2.new(0.5,0.5)
   i1.BackgroundColor3 = Color3.fromRGB(255,255,255)
   i1.BackgroundTransparency = 1
@@ -22,8 +22,8 @@ local function BuildSeaHubUI(parent)
   i2.Size = UDim2.new(0,800,0,500)
   i2.Position = UDim2.new(0.5,0,0.5,0)
   i2.AnchorPoint = Vector2.new(0.5,0.5)
-  i2.BackgroundColor3 = Color3.fromRGB(255,255,255)
-  i2.BackgroundTransparency = 1
+  i2.BackgroundColor3 = Color3.fromRGB(22,22,22)
+  i2.BackgroundTransparency = 0
   i2.Visible = true
   i2.ZIndex = 1
   local i3 = Instance.new("UICorner")
@@ -51,7 +51,7 @@ local function BuildSeaHubUI(parent)
   i6.AnchorPoint = Vector2.new(0,0)
   i6.BackgroundColor3 = Color3.fromRGB(255,255,255)
   i6.BackgroundTransparency = 1
-  i6.Visible = false
+  i6.Visible = true
   i6.ZIndex = 1
   local i7 = Instance.new("UIListLayout")
   i7.Name = "UIListLayout"
@@ -63,7 +63,7 @@ local function BuildSeaHubUI(parent)
   local i9 = Instance.new("Frame")
   i9.Name = "Frame"
   i9.Parent = i6
-  i9.Size = UDim2.new(0,0,0,36)
+  i9.Size = UDim2.new(1,0,0,36)
   i9.Position = UDim2.new(0,0,0,0)
   i9.AnchorPoint = Vector2.new(0,0)
   i9.BackgroundColor3 = Color3.fromRGB(22,22,22)
@@ -87,7 +87,7 @@ local function BuildSeaHubUI(parent)
   local i14 = Instance.new("Frame")
   i14.Name = "Frame"
   i14.Parent = i9
-  i14.Size = UDim2.new(0,0,1,0)
+  i14.Size = UDim2.new(0,160,1,0)
   i14.Position = UDim2.new(0.5,0,0,0)
   i14.AnchorPoint = Vector2.new(0.5,0)
   i14.BackgroundColor3 = Color3.fromRGB(255,255,255)
@@ -97,7 +97,7 @@ local function BuildSeaHubUI(parent)
   local i15 = Instance.new("Frame")
   i15.Name = "Frame"
   i15.Parent = i14
-  i15.Size = UDim2.new(0,0,1,0)
+  i15.Size = UDim2.new(1,0,1,0)
   i15.Position = UDim2.new(0,0,0,0)
   i15.AnchorPoint = Vector2.new(0,0)
   i15.BackgroundColor3 = Color3.fromRGB(255,255,255)
@@ -131,7 +131,7 @@ local function BuildSeaHubUI(parent)
   local i21 = Instance.new("TextLabel")
   i21.Name = "TextLabel"
   i21.Parent = i18
-  i21.Size = UDim2.new(0,0,1,0)
+  i21.Size = UDim2.new(1,0,1,0)
   i21.Position = UDim2.new(0,0,0,0)
   i21.AnchorPoint = Vector2.new(0,0)
   i21.BackgroundColor3 = Color3.fromRGB(163,162,165)
@@ -176,7 +176,7 @@ local function BuildSeaHubUI(parent)
   local i26 = Instance.new("TextLabel")
   i26.Name = "TextLabel"
   i26.Parent = i23
-  i26.Size = UDim2.new(0,0,1,0)
+  i26.Size = UDim2.new(1,0,1,0)
   i26.Position = UDim2.new(0,0,0,0)
   i26.AnchorPoint = Vector2.new(0,0)
   i26.BackgroundColor3 = Color3.fromRGB(163,162,165)
@@ -221,7 +221,7 @@ local function BuildSeaHubUI(parent)
   local i31 = Instance.new("TextLabel")
   i31.Name = "TextLabel"
   i31.Parent = i28
-  i31.Size = UDim2.new(0,0,1,0)
+  i31.Size = UDim2.new(1,0,1,0)
   i31.Position = UDim2.new(0,0,0,0)
   i31.AnchorPoint = Vector2.new(0,0)
   i31.BackgroundColor3 = Color3.fromRGB(163,162,165)
@@ -273,7 +273,7 @@ local function BuildSeaHubUI(parent)
   local i36 = Instance.new("ScrollingFrame")
   i36.Name = "ScrollingFrame"
   i36.Parent = i6
-  i36.Size = UDim2.new(1,0,0,0)
+  i36.Size = UDim2.new(1,0,1,-50)
   i36.Position = UDim2.new(0,0,0,0)
   i36.AnchorPoint = Vector2.new(0,0)
   i36.BackgroundColor3 = Color3.fromRGB(255,255,255)
@@ -295,7 +295,7 @@ local function BuildSeaHubUI(parent)
   local i40 = Instance.new("Frame")
   i40.Name = "Frame"
   i40.Parent = i36
-  i40.Size = UDim2.new(1,0,0,0)
+  i40.Size = UDim2.new(1,0,0,1200)
   i40.Position = UDim2.new(0,0,0,0)
   i40.AnchorPoint = Vector2.new(0,0)
   i40.BackgroundColor3 = Color3.fromRGB(255,255,255)
@@ -309,7 +309,7 @@ local function BuildSeaHubUI(parent)
   local i42 = Instance.new("Frame")
   i42.Name = "Frame"
   i42.Parent = i40
-  i42.Size = UDim2.new(1,0,0,0)
+  i42.Size = UDim2.new(1,0,0,120)
   i42.Position = UDim2.new(0,0,0,0)
   i42.AnchorPoint = Vector2.new(0,0)
   i42.BackgroundColor3 = Color3.fromRGB(255,255,255)
@@ -319,7 +319,7 @@ local function BuildSeaHubUI(parent)
   local i43 = Instance.new("Frame")
   i43.Name = "Frame"
   i43.Parent = i42
-  i43.Size = UDim2.new(1,0,0,10)
+  i43.Size = UDim2.new(1,0,0,90)
   i43.Position = UDim2.new(0,0,0,20)
   i43.AnchorPoint = Vector2.new(0,0)
   i43.BackgroundColor3 = Color3.fromRGB(22,22,22)
@@ -380,7 +380,7 @@ local function BuildSeaHubUI(parent)
   local i53 = Instance.new("Frame")
   i53.Name = "Frame"
   i53.Parent = i51
-  i53.Size = UDim2.new(0,0,0,0)
+  i53.Size = UDim2.new(1,0,0,42)
   i53.Position = UDim2.new(0,0,0,0)
   i53.AnchorPoint = Vector2.new(0,0)
   i53.BackgroundColor3 = Color3.fromRGB(255,255,255)
@@ -394,7 +394,7 @@ local function BuildSeaHubUI(parent)
   local i55 = Instance.new("TextLabel")
   i55.Name = "TextLabel"
   i55.Parent = i53
-  i55.Size = UDim2.new(0,0,0,0)
+  i55.Size = UDim2.new(1,0,0,18)
   i55.Position = UDim2.new(0,0,0,0)
   i55.AnchorPoint = Vector2.new(0,0)
   i55.BackgroundColor3 = Color3.fromRGB(163,162,165)
@@ -408,7 +408,7 @@ local function BuildSeaHubUI(parent)
   local i56 = Instance.new("TextLabel")
   i56.Name = "TextLabel"
   i56.Parent = i53
-  i56.Size = UDim2.new(0,0,0,0)
+  i56.Size = UDim2.new(1,0,0,16)
   i56.Position = UDim2.new(0,0,0,0)
   i56.AnchorPoint = Vector2.new(0,0)
   i56.BackgroundColor3 = Color3.fromRGB(163,162,165)
@@ -536,7 +536,7 @@ local function BuildSeaHubUI(parent)
   local i71 = Instance.new("Frame")
   i71.Name = "Frame"
   i71.Parent = i40
-  i71.Size = UDim2.new(1,0,0,0)
+  i71.Size = UDim2.new(1,0,0,200)
   i71.Position = UDim2.new(0,0,0,0)
   i71.AnchorPoint = Vector2.new(0,0)
   i71.BackgroundColor3 = Color3.fromRGB(255,255,255)
@@ -546,7 +546,7 @@ local function BuildSeaHubUI(parent)
   local i72 = Instance.new("Frame")
   i72.Name = "Frame"
   i72.Parent = i71
-  i72.Size = UDim2.new(1,0,0,10)
+  i72.Size = UDim2.new(1,0,0,90)
   i72.Position = UDim2.new(0,0,0,20)
   i72.AnchorPoint = Vector2.new(0,0)
   i72.BackgroundColor3 = Color3.fromRGB(22,22,22)
@@ -607,7 +607,7 @@ local function BuildSeaHubUI(parent)
   local i82 = Instance.new("Frame")
   i82.Name = "Frame"
   i82.Parent = i80
-  i82.Size = UDim2.new(0,0,0,0)
+  i82.Size = UDim2.new(1,0,0,42)
   i82.Position = UDim2.new(0,0,0,0)
   i82.AnchorPoint = Vector2.new(0,0)
   i82.BackgroundColor3 = Color3.fromRGB(255,255,255)
@@ -621,7 +621,7 @@ local function BuildSeaHubUI(parent)
   local i84 = Instance.new("TextLabel")
   i84.Name = "TextLabel"
   i84.Parent = i82
-  i84.Size = UDim2.new(0,0,0,0)
+  i84.Size = UDim2.new(1,0,0,18)
   i84.Position = UDim2.new(0,0,0,0)
   i84.AnchorPoint = Vector2.new(0,0)
   i84.BackgroundColor3 = Color3.fromRGB(163,162,165)
@@ -635,7 +635,7 @@ local function BuildSeaHubUI(parent)
   local i85 = Instance.new("TextLabel")
   i85.Name = "TextLabel"
   i85.Parent = i82
-  i85.Size = UDim2.new(0,0,0,0)
+  i85.Size = UDim2.new(1,0,0,16)
   i85.Position = UDim2.new(0,0,0,0)
   i85.AnchorPoint = Vector2.new(0,0)
   i85.BackgroundColor3 = Color3.fromRGB(163,162,165)
@@ -955,7 +955,7 @@ local function BuildSeaHubUI(parent)
   local i125 = Instance.new("Frame")
   i125.Name = "Frame"
   i125.Parent = i124
-  i125.Size = UDim2.new(1,0,0,10)
+  i125.Size = UDim2.new(1,0,0,90)
   i125.Position = UDim2.new(0,0,0,20)
   i125.AnchorPoint = Vector2.new(0,0)
   i125.BackgroundColor3 = Color3.fromRGB(22,22,22)
@@ -1739,7 +1739,7 @@ local function BuildSeaHubUI(parent)
   local i226 = Instance.new("Frame")
   i226.Name = "Frame"
   i226.Parent = i225
-  i226.Size = UDim2.new(1,0,0,10)
+  i226.Size = UDim2.new(1,0,0,90)
   i226.Position = UDim2.new(0,0,0,20)
   i226.AnchorPoint = Vector2.new(0,0)
   i226.BackgroundColor3 = Color3.fromRGB(22,22,22)
@@ -2194,7 +2194,7 @@ local function BuildSeaHubUI(parent)
   local i280 = Instance.new("Frame")
   i280.Name = "Frame"
   i280.Parent = i279
-  i280.Size = UDim2.new(1,0,0,10)
+  i280.Size = UDim2.new(1,0,0,90)
   i280.Position = UDim2.new(0,0,0,20)
   i280.AnchorPoint = Vector2.new(0,0)
   i280.BackgroundColor3 = Color3.fromRGB(22,22,22)
@@ -2655,7 +2655,7 @@ local function BuildSeaHubUI(parent)
   local i340 = Instance.new("Frame")
   i340.Name = "Frame"
   i340.Parent = i339
-  i340.Size = UDim2.new(1,0,0,10)
+  i340.Size = UDim2.new(1,0,0,90)
   i340.Position = UDim2.new(0,0,0,20)
   i340.AnchorPoint = Vector2.new(0,0)
   i340.BackgroundColor3 = Color3.fromRGB(22,22,22)
@@ -3036,7 +3036,7 @@ local function BuildSeaHubUI(parent)
   local i390 = Instance.new("Frame")
   i390.Name = "Frame"
   i390.Parent = i389
-  i390.Size = UDim2.new(1,0,0,10)
+  i390.Size = UDim2.new(1,0,0,90)
   i390.Position = UDim2.new(0,0,0,20)
   i390.AnchorPoint = Vector2.new(0,0)
   i390.BackgroundColor3 = Color3.fromRGB(22,22,22)
@@ -3533,7 +3533,7 @@ local function BuildSeaHubUI(parent)
   local i452 = Instance.new("Frame")
   i452.Name = "Frame"
   i452.Parent = i451
-  i452.Size = UDim2.new(1,0,0,10)
+  i452.Size = UDim2.new(1,0,0,90)
   i452.Position = UDim2.new(0,0,0,20)
   i452.AnchorPoint = Vector2.new(0,0)
   i452.BackgroundColor3 = Color3.fromRGB(22,22,22)
@@ -4027,7 +4027,7 @@ local function BuildSeaHubUI(parent)
   local i525 = Instance.new("ScrollingFrame")
   i525.Name = "ScrollingFrame"
   i525.Parent = i6
-  i525.Size = UDim2.new(1,0,0,0)
+  i525.Size = UDim2.new(1,0,1,0)
   i525.Position = UDim2.new(0,0,0,0)
   i525.AnchorPoint = Vector2.new(0,0)
   i525.BackgroundColor3 = Color3.fromRGB(255,255,255)
@@ -4073,7 +4073,7 @@ local function BuildSeaHubUI(parent)
   local i532 = Instance.new("Frame")
   i532.Name = "Frame"
   i532.Parent = i531
-  i532.Size = UDim2.new(1,0,0,10)
+  i532.Size = UDim2.new(1,0,0,90)
   i532.Position = UDim2.new(0,0,0,20)
   i532.AnchorPoint = Vector2.new(0,0)
   i532.BackgroundColor3 = Color3.fromRGB(22,22,22)
@@ -4448,7 +4448,7 @@ local function BuildSeaHubUI(parent)
   local i580 = Instance.new("Frame")
   i580.Name = "Frame"
   i580.Parent = i579
-  i580.Size = UDim2.new(1,0,0,10)
+  i580.Size = UDim2.new(1,0,0,90)
   i580.Position = UDim2.new(0,0,0,20)
   i580.AnchorPoint = Vector2.new(0,0)
   i580.BackgroundColor3 = Color3.fromRGB(22,22,22)
@@ -4857,7 +4857,7 @@ local function BuildSeaHubUI(parent)
   local i633 = Instance.new("Frame")
   i633.Name = "Frame"
   i633.Parent = i632
-  i633.Size = UDim2.new(1,0,0,10)
+  i633.Size = UDim2.new(1,0,0,90)
   i633.Position = UDim2.new(0,0,0,20)
   i633.AnchorPoint = Vector2.new(0,0)
   i633.BackgroundColor3 = Color3.fromRGB(22,22,22)
@@ -5187,7 +5187,7 @@ local function BuildSeaHubUI(parent)
   local i674 = Instance.new("Frame")
   i674.Name = "Frame"
   i674.Parent = i673
-  i674.Size = UDim2.new(1,0,0,10)
+  i674.Size = UDim2.new(1,0,0,90)
   i674.Position = UDim2.new(0,0,0,20)
   i674.AnchorPoint = Vector2.new(0,0)
   i674.BackgroundColor3 = Color3.fromRGB(22,22,22)
@@ -5736,7 +5736,7 @@ local function BuildSeaHubUI(parent)
   local i749 = Instance.new("Frame")
   i749.Name = "Frame"
   i749.Parent = i748
-  i749.Size = UDim2.new(1,0,0,10)
+  i749.Size = UDim2.new(1,0,0,90)
   i749.Position = UDim2.new(0,0,0,20)
   i749.AnchorPoint = Vector2.new(0,0)
   i749.BackgroundColor3 = Color3.fromRGB(22,22,22)
@@ -6369,7 +6369,7 @@ local function BuildSeaHubUI(parent)
   local i832 = Instance.new("Frame")
   i832.Name = "Frame"
   i832.Parent = i831
-  i832.Size = UDim2.new(1,0,0,10)
+  i832.Size = UDim2.new(1,0,0,90)
   i832.Position = UDim2.new(0,0,0,20)
   i832.AnchorPoint = Vector2.new(0,0)
   i832.BackgroundColor3 = Color3.fromRGB(22,22,22)
@@ -7116,7 +7116,7 @@ local function BuildSeaHubUI(parent)
   local i927 = Instance.new("Frame")
   i927.Name = "Frame"
   i927.Parent = i926
-  i927.Size = UDim2.new(1,0,0,10)
+  i927.Size = UDim2.new(1,0,0,90)
   i927.Position = UDim2.new(0,0,0,20)
   i927.AnchorPoint = Vector2.new(0,0)
   i927.BackgroundColor3 = Color3.fromRGB(22,22,22)
@@ -7542,7 +7542,7 @@ local function BuildSeaHubUI(parent)
   local i984 = Instance.new("Frame")
   i984.Name = "Frame"
   i984.Parent = i983
-  i984.Size = UDim2.new(1,0,0,10)
+  i984.Size = UDim2.new(1,0,0,90)
   i984.Position = UDim2.new(0,0,0,20)
   i984.AnchorPoint = Vector2.new(0,0)
   i984.BackgroundColor3 = Color3.fromRGB(22,22,22)
@@ -8485,7 +8485,7 @@ local function BuildSeaHubUI(parent)
   local i1110 = Instance.new("Frame")
   i1110.Name = "Frame"
   i1110.Parent = i1109
-  i1110.Size = UDim2.new(1,0,0,10)
+  i1110.Size = UDim2.new(1,0,0,90)
   i1110.Position = UDim2.new(0,0,0,20)
   i1110.AnchorPoint = Vector2.new(0,0)
   i1110.BackgroundColor3 = Color3.fromRGB(22,22,22)
@@ -10374,7 +10374,7 @@ local function BuildSeaHubUI(parent)
   local i1350 = Instance.new("Frame")
   i1350.Name = "Frame"
   i1350.Parent = i1349
-  i1350.Size = UDim2.new(1,0,0,10)
+  i1350.Size = UDim2.new(1,0,0,90)
   i1350.Position = UDim2.new(0,0,0,20)
   i1350.AnchorPoint = Vector2.new(0,0)
   i1350.BackgroundColor3 = Color3.fromRGB(22,22,22)
@@ -11165,7 +11165,7 @@ local function BuildSeaHubUI(parent)
   local i1447 = Instance.new("Frame")
   i1447.Name = "Frame"
   i1447.Parent = i1446
-  i1447.Size = UDim2.new(1,0,0,10)
+  i1447.Size = UDim2.new(1,0,0,90)
   i1447.Position = UDim2.new(0,0,0,20)
   i1447.AnchorPoint = Vector2.new(0,0)
   i1447.BackgroundColor3 = Color3.fromRGB(22,22,22)
@@ -12321,7 +12321,7 @@ local function BuildSeaHubUI(parent)
   local i1596 = Instance.new("Frame")
   i1596.Name = "Frame"
   i1596.Parent = i1595
-  i1596.Size = UDim2.new(1,0,0,10)
+  i1596.Size = UDim2.new(1,0,0,90)
   i1596.Position = UDim2.new(0,0,0,20)
   i1596.AnchorPoint = Vector2.new(0,0)
   i1596.BackgroundColor3 = Color3.fromRGB(22,22,22)
@@ -13679,7 +13679,7 @@ local function BuildSeaHubUI(parent)
   local i1773 = Instance.new("Frame")
   i1773.Name = "Frame"
   i1773.Parent = i1772
-  i1773.Size = UDim2.new(1,0,0,10)
+  i1773.Size = UDim2.new(1,0,0,90)
   i1773.Position = UDim2.new(0,0,0,20)
   i1773.AnchorPoint = Vector2.new(0,0)
   i1773.BackgroundColor3 = Color3.fromRGB(22,22,22)
@@ -13999,7 +13999,7 @@ local function BuildSeaHubUI(parent)
   local i1813 = Instance.new("Frame")
   i1813.Name = "Frame"
   i1813.Parent = i1812
-  i1813.Size = UDim2.new(1,0,0,10)
+  i1813.Size = UDim2.new(1,0,0,90)
   i1813.Position = UDim2.new(0,0,0,20)
   i1813.AnchorPoint = Vector2.new(0,0)
   i1813.BackgroundColor3 = Color3.fromRGB(22,22,22)
@@ -15257,7 +15257,7 @@ local function BuildSeaHubUI(parent)
   local i1972 = Instance.new("Frame")
   i1972.Name = "Frame"
   i1972.Parent = i1971
-  i1972.Size = UDim2.new(1,0,0,10)
+  i1972.Size = UDim2.new(1,0,0,90)
   i1972.Position = UDim2.new(0,0,0,20)
   i1972.AnchorPoint = Vector2.new(0,0)
   i1972.BackgroundColor3 = Color3.fromRGB(22,22,22)
@@ -16814,7 +16814,7 @@ local function BuildSeaHubUI(parent)
   local i2177 = Instance.new("Frame")
   i2177.Name = "Frame"
   i2177.Parent = i2176
-  i2177.Size = UDim2.new(1,0,0,10)
+  i2177.Size = UDim2.new(1,0,0,90)
   i2177.Position = UDim2.new(0,0,0,20)
   i2177.AnchorPoint = Vector2.new(0,0)
   i2177.BackgroundColor3 = Color3.fromRGB(22,22,22)
@@ -18026,7 +18026,7 @@ local function BuildSeaHubUI(parent)
   local i2332 = Instance.new("Frame")
   i2332.Name = "Frame"
   i2332.Parent = i2331
-  i2332.Size = UDim2.new(1,0,0,10)
+  i2332.Size = UDim2.new(1,0,0,90)
   i2332.Position = UDim2.new(0,0,0,20)
   i2332.AnchorPoint = Vector2.new(0,0)
   i2332.BackgroundColor3 = Color3.fromRGB(22,22,22)
@@ -19526,7 +19526,7 @@ local function BuildSeaHubUI(parent)
   local i2529 = Instance.new("Frame")
   i2529.Name = "Frame"
   i2529.Parent = i2528
-  i2529.Size = UDim2.new(1,0,0,10)
+  i2529.Size = UDim2.new(1,0,0,90)
   i2529.Position = UDim2.new(0,0,0,20)
   i2529.AnchorPoint = Vector2.new(0,0)
   i2529.BackgroundColor3 = Color3.fromRGB(22,22,22)
@@ -20169,7 +20169,7 @@ local function BuildSeaHubUI(parent)
   local i2610 = Instance.new("Frame")
   i2610.Name = "Frame"
   i2610.Parent = i2609
-  i2610.Size = UDim2.new(1,0,0,10)
+  i2610.Size = UDim2.new(1,0,0,90)
   i2610.Position = UDim2.new(0,0,0,20)
   i2610.AnchorPoint = Vector2.new(0,0)
   i2610.BackgroundColor3 = Color3.fromRGB(22,22,22)
@@ -20761,7 +20761,7 @@ local function BuildSeaHubUI(parent)
   local i2683 = Instance.new("Frame")
   i2683.Name = "Frame"
   i2683.Parent = i2682
-  i2683.Size = UDim2.new(1,0,0,10)
+  i2683.Size = UDim2.new(1,0,0,90)
   i2683.Position = UDim2.new(0,0,0,20)
   i2683.AnchorPoint = Vector2.new(0,0)
   i2683.BackgroundColor3 = Color3.fromRGB(22,22,22)
@@ -21387,7 +21387,7 @@ local function BuildSeaHubUI(parent)
   local i2760 = Instance.new("Frame")
   i2760.Name = "Frame"
   i2760.Parent = i2759
-  i2760.Size = UDim2.new(1,0,0,10)
+  i2760.Size = UDim2.new(1,0,0,90)
   i2760.Position = UDim2.new(0,0,0,20)
   i2760.AnchorPoint = Vector2.new(0,0)
   i2760.BackgroundColor3 = Color3.fromRGB(22,22,22)
@@ -22195,7 +22195,7 @@ local function BuildSeaHubUI(parent)
   local i2861 = Instance.new("Frame")
   i2861.Name = "Frame"
   i2861.Parent = i2860
-  i2861.Size = UDim2.new(1,0,0,10)
+  i2861.Size = UDim2.new(1,0,0,90)
   i2861.Position = UDim2.new(0,0,0,20)
   i2861.AnchorPoint = Vector2.new(0,0)
   i2861.BackgroundColor3 = Color3.fromRGB(22,22,22)
@@ -23036,7 +23036,7 @@ local function BuildSeaHubUI(parent)
   local i2970 = Instance.new("Frame")
   i2970.Name = "Frame"
   i2970.Parent = i2969
-  i2970.Size = UDim2.new(1,0,0,10)
+  i2970.Size = UDim2.new(1,0,0,90)
   i2970.Position = UDim2.new(0,0,0,20)
   i2970.AnchorPoint = Vector2.new(0,0)
   i2970.BackgroundColor3 = Color3.fromRGB(22,22,22)
@@ -23778,7 +23778,7 @@ local function BuildSeaHubUI(parent)
   local i3061 = Instance.new("Frame")
   i3061.Name = "Frame"
   i3061.Parent = i3060
-  i3061.Size = UDim2.new(1,0,0,10)
+  i3061.Size = UDim2.new(1,0,0,90)
   i3061.Position = UDim2.new(0,0,0,20)
   i3061.AnchorPoint = Vector2.new(0,0)
   i3061.BackgroundColor3 = Color3.fromRGB(22,22,22)
@@ -24716,7 +24716,7 @@ local function BuildSeaHubUI(parent)
   local i3179 = Instance.new("Frame")
   i3179.Name = "Frame"
   i3179.Parent = i3178
-  i3179.Size = UDim2.new(1,0,0,10)
+  i3179.Size = UDim2.new(1,0,0,90)
   i3179.Position = UDim2.new(0,0,0,20)
   i3179.AnchorPoint = Vector2.new(0,0)
   i3179.BackgroundColor3 = Color3.fromRGB(22,22,22)
@@ -25308,7 +25308,7 @@ local function BuildSeaHubUI(parent)
   local i3252 = Instance.new("Frame")
   i3252.Name = "Frame"
   i3252.Parent = i3251
-  i3252.Size = UDim2.new(1,0,0,10)
+  i3252.Size = UDim2.new(1,0,0,90)
   i3252.Position = UDim2.new(0,0,0,20)
   i3252.AnchorPoint = Vector2.new(0,0)
   i3252.BackgroundColor3 = Color3.fromRGB(22,22,22)
@@ -27307,7 +27307,7 @@ Protect Quest Items: never sell quest items. Then turn on Auto Sell."
   local i3506 = Instance.new("Frame")
   i3506.Name = "Frame"
   i3506.Parent = i3505
-  i3506.Size = UDim2.new(1,0,0,10)
+  i3506.Size = UDim2.new(1,0,0,90)
   i3506.Position = UDim2.new(0,0,0,20)
   i3506.AnchorPoint = Vector2.new(0,0)
   i3506.BackgroundColor3 = Color3.fromRGB(22,22,22)
@@ -28397,7 +28397,7 @@ Protect Quest Items: never sell quest items. Then turn on Auto Sell."
   local i3637 = Instance.new("Frame")
   i3637.Name = "Frame"
   i3637.Parent = i3636
-  i3637.Size = UDim2.new(1,0,0,10)
+  i3637.Size = UDim2.new(1,0,0,90)
   i3637.Position = UDim2.new(0,0,0,20)
   i3637.AnchorPoint = Vector2.new(0,0)
   i3637.BackgroundColor3 = Color3.fromRGB(22,22,22)
@@ -29292,7 +29292,7 @@ Protect Quest Items: never sell quest items. Then turn on Auto Sell."
   local i3752 = Instance.new("Frame")
   i3752.Name = "Frame"
   i3752.Parent = i3751
-  i3752.Size = UDim2.new(1,0,0,10)
+  i3752.Size = UDim2.new(1,0,0,90)
   i3752.Position = UDim2.new(0,0,0,20)
   i3752.AnchorPoint = Vector2.new(0,0)
   i3752.BackgroundColor3 = Color3.fromRGB(22,22,22)
@@ -29538,7 +29538,7 @@ Protect Quest Items: never sell quest items. Then turn on Auto Sell."
   local i3778 = Instance.new("Frame")
   i3778.Name = "Frame"
   i3778.Parent = i3777
-  i3778.Size = UDim2.new(1,0,0,10)
+  i3778.Size = UDim2.new(1,0,0,90)
   i3778.Position = UDim2.new(0,0,0,20)
   i3778.AnchorPoint = Vector2.new(0,0)
   i3778.BackgroundColor3 = Color3.fromRGB(22,22,22)
@@ -30410,7 +30410,7 @@ Protect Quest Items: never sell quest items. Then turn on Auto Sell."
   local i3877 = Instance.new("Frame")
   i3877.Name = "Frame"
   i3877.Parent = i3876
-  i3877.Size = UDim2.new(1,0,0,10)
+  i3877.Size = UDim2.new(1,0,0,90)
   i3877.Position = UDim2.new(0,0,0,20)
   i3877.AnchorPoint = Vector2.new(0,0)
   i3877.BackgroundColor3 = Color3.fromRGB(22,22,22)
@@ -31787,7 +31787,7 @@ Protect Quest Items: never sell quest items. Then turn on Auto Sell."
   i4054.Name = "CanvasGroup"
   i4054.Parent = gui
   i4054.Size = UDim2.new(0,800,0,500)
-  i4054.Position = UDim2.new(0.5,512,0.5,322)
+  i4054.Position = UDim2.new(0.5,0,0.5,0)
   i4054.AnchorPoint = Vector2.new(0.5,0.5)
   i4054.BackgroundColor3 = Color3.fromRGB(22,22,22)
   i4054.BackgroundTransparency = 0.11999999731779099
