@@ -1,5 +1,6 @@
 -- SeaHub UI visual dump (_SH_AST)
 -- NOTE: SeaHub logic is Luarmor-protected; this is the GUI instance tree only.
+-- To run and see: loadstring(readfile("the/correct/path/to/SeaHub_UI.lua"))()   or use execute-file with full path if readfile can't access it.
 local function BuildSeaHubUI(parent)
   local gui = Instance.new('ScreenGui')
   gui.Name = '_SH_AST'
@@ -31802,4 +31803,24 @@ Protect Quest Items: never sell quest items. Then turn on Auto Sell."
   i4056.Parent = i4054
   return gui
 end
-return BuildSeaHubUI
+local ok, res = pcall(BuildSeaHubUI)
+if ok and res then
+  _G.LastSeaHubGui = res
+  local cg = res:FindFirstChild('CanvasGroup', true)
+  if cg then
+    cg.Visible = true
+    cg.Position = UDim2.new(0.5, 0, 0.5, 0)
+  end
+  local main = cg and cg:FindFirstChild('Frame', true)
+  if main then
+    main.Visible = true
+    main.BackgroundTransparency = 0
+    main.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+    main.Position = UDim2.new(0.5, 0, 0.5, 0)
+  end
+  warn('[SeaHub_UI] gui created parented to', res.Parent and res.Parent.Name or 'nil')
+else
+  warn('[SeaHub_UI] build error:', res)
+end
+_G.BuildSeaHubUI = BuildSeaHubUI
+return function()end
